@@ -58,7 +58,7 @@ public class Usuario {
 		}
 		else {
 	
-		if(username.equals(this.credencial.getUsername()) && this.credencial.comprobarPassword(password)) {
+		if(username == this.credencial.getUsername() && this.credencial.comprobarPassword(password)) {
 			esLoginCorrecto=true;
 		}
 		else {

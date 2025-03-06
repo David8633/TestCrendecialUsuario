@@ -39,7 +39,7 @@ class Tests {
 	@Test
 	void testHacerLogin() {
 		assertFalse(u1.hacerLogin("asdd","edwqwdqa"));
-		assertTrue(u1.hacerLogin("Sewe100","Pqwers1233"));
+		assertTrue(u1.hacerLogin("serwed100", "Pqwers1233"));
 	}
 	
 	

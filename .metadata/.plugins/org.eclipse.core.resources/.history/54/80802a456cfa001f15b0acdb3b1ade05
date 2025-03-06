@@ -36,11 +36,6 @@ class Tests {
 		assertFalse(u1.modificarPassword("Pqwers1233","erttwed","erttwed"));
 	}
 	
-	@Test
-	void testHacerLogin() {
-		assertFalse(u1.hacerLogin("asdd","edwqwdqa"));
-		assertTrue(u1.hacerLogin("Sewe100","Pqwers1233"));
-	}
 	
 	
 }
