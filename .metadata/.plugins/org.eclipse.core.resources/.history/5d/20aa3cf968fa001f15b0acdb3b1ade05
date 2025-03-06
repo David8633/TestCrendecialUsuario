@@ -35,19 +35,18 @@ public class Usuario {
 			System.out.println("CUENTA BLOQUEADA!!");
 		}
 		
-		if(this.credencial.comprobarPassword(oldpass) && !oldpass.equals(newpass) && newpass.equals(newpassverif)){
+		if(this.credencial.comprobarPassword(oldpass) && !oldpass.equals(newpass) && !newpass.equals(newpassverif)){
 			newpass=newpassverif;
-			if(this.credencial.esPasswordSegura(newpassverif)) {
 			this.credencial.setPassword(newpassverif);
 			esPassModificable=true;
-			}
 		}
 		
 		return esPassModificable;
 	}
 	
-/*		return this.credencial.esPasswordSegura(this.);*/
-//	}
+	public boolean esPasswordSegura() {
+		return this.credencial.esPasswordSegura();
+	}
 	
 	public boolean hacerLogin(String username, String password) {
 		

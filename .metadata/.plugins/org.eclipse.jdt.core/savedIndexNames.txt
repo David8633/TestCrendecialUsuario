@@ -15,6 +15,5 @@ INDEX VERSION 1.134+/home/estudiante/Desktop/Testing/.metadata/.plugins/org.ecli
 890177845.index
 2352693898.index
 919453857.index
-4283831159.index
 236523641.index
 1678983313.index

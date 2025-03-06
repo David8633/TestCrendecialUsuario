@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Tests" project="Testing" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="Tests" time="12.616" uniqueid="[engine:junit-jupiter]/[class:Tests]">
+    <testcase name="testEsPasswordSegura" classname="Tests" time="1.541" displayname="testEsPasswordSegura()" uniqueid="[engine:junit-jupiter]/[class:Tests]/[method:testEsPasswordSegura()]"/>
+    <testcase name="testModificarContraseña" classname="Tests" time="11.07" displayname="testModificarContraseña()" uniqueid="[engine:junit-jupiter]/[class:Tests]/[method:testModificarContraseña()]"/>
+    <testcase name="testComprobarPassword" classname="Tests" time="0.003" displayname="testComprobarPassword()" uniqueid="[engine:junit-jupiter]/[class:Tests]/[method:testComprobarPassword()]"/>
+  </testsuite>
+</testrun>

@@ -37,17 +37,18 @@ public class Usuario {
 		
 		if(this.credencial.comprobarPassword(oldpass) && !oldpass.equals(newpass) && newpass.equals(newpassverif)){
 			newpass=newpassverif;
-			if(this.credencial.esPasswordSegura(newpassverif)) {
-			this.credencial.setPassword(newpassverif);
+			this.credencial.esPasswordSegura(newpassverif)?this.credencial.setPassword(newpassverif):System.out.println("no es segura");
+			
+			
 			esPassModificable=true;
-			}
 		}
 		
 		return esPassModificable;
 	}
 	
-/*		return this.credencial.esPasswordSegura(this.);*/
-//	}
+/*pblic boolean esPasswordSegura() {
+		return this.credencial.esPasswordSegura();
+	}*/
 	
 	public boolean hacerLogin(String username, String password) {
 		

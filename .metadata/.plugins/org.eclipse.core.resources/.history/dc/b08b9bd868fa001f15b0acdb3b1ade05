@@ -5,17 +5,15 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import ejercicioCredencial.Credencial;
-import ejercicioCredencial.Usuario;
 class Tests {
 
 	private static Credencial credencial;
 	private static Credencial credencial1;
-	private static Usuario u1;
+	
 	@BeforeAll
 	public static void creacionDePassword() {
 		credencial = new Credencial("lola", "flores","poflsaseeee");
 		credencial1 = new Credencial("Sergio","bol","PaosdaEQw12");
-		u1 = new Usuario("Sergio", "wedst", "Pqwers1233" );
 	}
 	
 	
@@ -31,10 +29,7 @@ class Tests {
 		assertFalse(credencial1.comprobarPassword("PaosdaEQw1"));
 	}
 	
-	@Test
-	void testModificarContraseña() {
-		assertFalse(u1.modificarPassword("Pqwers1233","erttwed","erttwed"));
-	}
+	
 	
 	
 	

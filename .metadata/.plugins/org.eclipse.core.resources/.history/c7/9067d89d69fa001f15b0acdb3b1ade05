@@ -15,7 +15,7 @@ class Tests {
 	public static void creacionDePassword() {
 		credencial = new Credencial("lola", "flores","poflsaseeee");
 		credencial1 = new Credencial("Sergio","bol","PaosdaEQw12");
-		u1 = new Usuario("Sergio", "wedst", "Pqwers1233" );
+		u1 = new Usuario("Sergio", "wedst", "c" );
 	}
 	
 	
