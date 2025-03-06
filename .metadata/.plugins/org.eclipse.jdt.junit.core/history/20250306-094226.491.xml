@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Tests" project="Testing" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="Tests" time="0.025" uniqueid="[engine:junit-jupiter]/[class:Tests]">
+    <testcase name="testEsPasswordSegura" classname="Tests" time="0.025" displayname="testEsPasswordSegura()" uniqueid="[engine:junit-jupiter]/[class:Tests]/[method:testEsPasswordSegura()]">
+      <failure>
+        <expected>false</expected>
+        <actual>true</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at Tests.testEsPasswordSegura(Tests.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

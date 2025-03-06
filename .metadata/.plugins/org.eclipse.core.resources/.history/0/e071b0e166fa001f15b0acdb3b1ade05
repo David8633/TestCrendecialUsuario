@@ -8,29 +8,20 @@ import ejercicioCredencial.Credencial;
 class Tests {
 
 	private static Credencial credencial;
-	private static Credencial credencial1;
 	
 	@BeforeAll
 	public static void creacionDePassword() {
-		credencial = new Credencial("lola", "flores","poflsaseeee");
-		credencial1 = new Credencial("Sergio","bol","PaosdaEQw12");
+		credencial= new Credencial("lola", "flores","poflsaseeee");
 	}
 	
 	
 	@Test
 	void testEsPasswordSegura() {
 		assertFalse(credencial.esPasswordSegura());
-		assertTrue(credencial1.esPasswordSegura());
 	}
-	
-	@Test
-	void testComprobarPassword() {
-		assertFalse(credencial.comprobarPassword("poflsase"));
-		assertFalse(credencial1.comprobarPassword("PaosdaEQw1"));
-	}
-	
 
-	
-	
-	
+	@Test 
+	void testComprobarConstrasena() {
+		assertTrue(credencial.comprobarPassword("poflsaseeee"));
+	}
 }

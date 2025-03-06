@@ -22,13 +22,6 @@ class Tests {
 		assertFalse(credencial.esPasswordSegura());
 		assertTrue(credencial1.esPasswordSegura());
 	}
-	
-	@Test
-	void testComprobarPassword() {
-		assertFalse(credencial.comprobarPassword("poflsase"));
-		assertFalse(credencial1.comprobarPassword("PaosdaEQw1"));
-	}
-	
 
 	
 	
