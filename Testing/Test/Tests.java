@@ -46,12 +46,18 @@ class Tests {
 		assertFalse(u1.modificarPassword("Pqwer1","PADDfdfdf123","PADDdfdf123"));
 		assertFalse(u1.modificarPassword("Pqwers1233","erttaQ","erttwed"));
 		assertFalse(u1.modificarPassword("Pqwers1233","erttwed","ertt2311"));
+		assertFalse(u1.modificarPassword(" ","erttwed","ertt2311"));
+		assertFalse(u1.modificarPassword("Pqwers1233"," ","ertt2311"));
+		assertFalse(u1.modificarPassword("Pqwers1233","erttwed"," "));
 	}
 	
 	@Test
 	void testHacerLogin() {
 		assertFalse(u1.hacerLogin("asdd","edwqwdqa"));
-		assertTrue(u1.hacerLogin("Sewe100","Pqwers1233"));
+		assertTrue(u1.hacerLogin("Sewe100","PAdfdfdf123"));
+		assertFalse(u1.hacerLogin(" ","edwqwdqa"));
+		assertFalse(u1.hacerLogin("Sewe100 "," "));
+
 	}
 	
 	
