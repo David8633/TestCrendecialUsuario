@@ -21,14 +21,19 @@ class Tests {
 	
 	@Test
 	void testEsPasswordSegura() {
-		assertFalse(credencial.esPasswordSegura());
-		assertTrue(credencial1.esPasswordSegura());
+		assertTrue(credencial.esPasswordSegura("PaosdaEQw12"));
+		assertFalse(credencial1.esPasswordSegura("Paos"));
+		assertFalse(credencial1.esPasswordSegura("pasdfdsfdf"));
+		assertFalse(credencial1.esPasswordSegura("Paos23"));
+		assertFalse(credencial1.esPasswordSegura(" "));
+		assertFalse(credencial1.esPasswordSegura("11111111111"));
 	}
 	
 	@Test
 	void testComprobarPassword() {
 		assertFalse(credencial.comprobarPassword("poflsase"));
 		assertFalse(credencial1.comprobarPassword("PaosdaEQw1"));
+		
 	}
 	
 	@Test
