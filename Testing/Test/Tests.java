@@ -42,6 +42,10 @@ class Tests {
 	@Test
 	void testModificarContraseña() {
 		assertFalse(u1.modificarPassword("Pqwers1233","erttwed","erttwed"));
+		assertTrue(u1.modificarPassword("Pqwers1233","PAdfdfdf123","PAdfdfdf123"));
+		assertFalse(u1.modificarPassword("Pqwer1","PADDfdfdf123","PADDdfdf123"));
+		assertFalse(u1.modificarPassword("Pqwers1233","erttaQ","erttwed"));
+		assertFalse(u1.modificarPassword("Pqwers1233","erttwed","ertt2311"));
 	}
 	
 	@Test
