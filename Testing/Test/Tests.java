@@ -33,7 +33,10 @@ class Tests {
 	void testComprobarPassword() {
 		assertFalse(credencial.comprobarPassword("poflsase"));
 		assertFalse(credencial1.comprobarPassword("PaosdaEQw1"));
-		
+		assertFalse(credencial1.comprobarPassword("Pddffaf12233"));
+		assertFalse(credencial.comprobarPassword(" "));
+		assertFalse(credencial1.comprobarPassword("1111111111"));
+		assertTrue(credencial1.comprobarPassword("PaosdaEQw12"));
 	}
 	
 	@Test
